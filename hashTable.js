@@ -40,7 +40,6 @@ HashTable.prototype.get = function (key) {
   }
   return;
 };
-
 HashTable.prototype.keys = function () {
   return [...new Set(this.keyMap.flatMap((arr) => arr.map((ele) => ele[0])))];
 };
